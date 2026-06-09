@@ -1,0 +1,136 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Consolas, monospace;
+}
+
+body{
+background:black;
+color:#00ff88;
+overflow:hidden;
+height:100vh;
+}
+
+/* MATRIX */
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* BOOT SCREEN */
+
+#bootScreen{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+
+.glitch{
+font-size:4rem;
+color:#00ff88;
+text-shadow:
+0 0 10px #00ff88,
+0 0 20px #00ff88,
+0 0 40px #00ff88;
+animation:glitch 2s infinite;
+}
+
+@keyframes glitch{
+0%{transform:translate(0)}
+20%{transform:translate(-2px,2px)}
+40%{transform:translate(2px,-2px)}
+60%{transform:translate(-1px,1px)}
+80%{transform:translate(1px,-1px)}
+100%{transform:translate(0)}
+}
+
+.boot-text{
+margin-top:30px;
+line-height:2;
+font-size:14px;
+}
+
+#enterBtn{
+margin-top:30px;
+padding:15px 40px;
+background:#00ff88;
+border:none;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+#enterBtn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00ff88;
+}
+
+/* TERMINAL */
+
+.hidden{
+display:none;
+}
+
+#terminalContainer{
+width:90%;
+height:90vh;
+margin:30px auto;
+background:rgba(0,0,0,.85);
+border:1px solid #00ff88;
+box-shadow:0 0 25px #00ff88;
+display:flex;
+flex-direction:column;
+}
+
+.terminal-header{
+padding:15px;
+border-bottom:1px solid #00ff88;
+}
+
+#terminal{
+flex:1;
+padding:20px;
+overflow-y:auto;
+white-space:pre-wrap;
+}
+
+.input-line{
+display:flex;
+padding:15px;
+border-top:1px solid #00ff88;
+}
+
+.input-line span{
+margin-right:10px;
+}
+
+#commandInput{
+background:none;
+border:none;
+outline:none;
+color:#00ff88;
+flex:1;
+font-size:16px;
+}
+
+.command{
+color:#00ffaa;
+}
+
+.response{
+color:#ffffff;
+margin-bottom:10px;
+}
+
+.project{
+color:#00ff88;
+padding-left:15px;
+}

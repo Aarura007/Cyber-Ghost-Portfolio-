@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>👻Ghost Protocol👻</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div id="bootScreen">
+    <h1 class="glitch">👻GHOST PROTOCOL👻</h1>
+
+    <div class="boot-text">
+        <p>Initializing Secure Environment...</p>
+        <p>Loading Encryption Modules...</p>
+        <p>Establishing Anonymous Connection...</p>
+        <p>Access Granted ✓</p>
+    </div>
+
+    <button id="enterBtn">ENTER TERMINAL</button>
+</div>
+
+<div id="terminalContainer" class="hidden">
+
+    <div class="terminal-header">
+        <span>👻Ghost Protocol Terminal👻</span>
+    </div>
+
+    <div id="terminal"></div>
+
+    <div class="input-line">
+        <span>ghost@protocol:~$</span>
+        <input type="text" id="commandInput" autofocus>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
